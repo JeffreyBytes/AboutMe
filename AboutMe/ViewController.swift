@@ -19,6 +19,9 @@ class ViewController: UIViewController {
 
     @IBAction func introduceYourselfButtonPressed(_ sender: UIButton) {
         
+        nameLabel.isHidden = false
+        hobbiesLabel.isHidden = false
+        
         nameLabel.text = "Jeffrey Carpenter"
         hobbiesLabel.text = "Poker, poker, more poker."
     
