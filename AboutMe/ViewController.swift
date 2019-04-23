@@ -10,13 +10,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var hobbiesLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        print("My name is Jeffrey Carpenter")
-        
     }
 
-
+    @IBAction func introduceYourselfButtonPressed(_ sender: UIButton) {
+        
+        nameLabel.text = "Jeffrey Carpenter"
+        hobbiesLabel.text = "Poker, poker, more poker."
+    
+    }
+    
 }
 
